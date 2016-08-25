@@ -7,29 +7,31 @@
   <param>
     <name>Width</name>
     <key>width</key>
+    <value>200</value>
     <type>int</type>
   </param>
   <param>
     <name>Height</name>
     <key>height</key>
+    <value>100</value>
     <type>int</type>
   </param>
   <param>
     <name>Start pattern</name>
     <key>start_pattern</key>
-    <value> ""</value>
+    <value></value>
     <type>string</type>
   </param>
   <param>
     <name>End pattern</name>
     <key>end_pattern</key>
-    <value> ""</value>
+    <value></value>
     <type>string</type>
   </param>
   <param>
     <name>Drop pattern</name>
     <key>drop_pattern</key>
-    <value> ""</value>
+    <value></value>
     <type>string</type>
   </param>
   <param>
