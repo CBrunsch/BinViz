@@ -59,14 +59,17 @@ CImgDisplay won't let me draw a grayish panel until a black and a white dot are 
 Credits: XavierTolza
 
 In some versions of ubuntu the module does not compile correctly, cmake outputs a warning not stopping the compilation but resulting in a non working OOT module
-
+```
 ===== cmake output fragment =========
 -- Checking for module SWIG
 -- Disabling SWIG because version check failed.
 ===== fragment end ==================================
-
+```
 When running the module the terminal runs into the following error:
+```
 AttributeError: 'module' object has no attribute 'vizsink_b'
-
+``` 
 The solution found on this bug report is to install the latest version of SWIG:
+```
 sudo apt install swig swig3.0
+```
