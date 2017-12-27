@@ -53,4 +53,20 @@ skip_zero_bytes:
 If set to true will cause that any byte compsed of zero's will be ignored. Ignorance of zero bytes will have precedence over start, end and drop detections.
 
 ## Known bugs
+### Display Dots
 CImgDisplay won't let me draw a grayish panel until a black and a white dot are painted. So it automagically calculates the gray weight/balance of the display. Thus the two pixels at the lower right corner are dummies to get the shading right. Any hints on that will be highly appreciated.
+### Build on Ubuntu
+Credits: XavierTolza
+
+In some versions of ubuntu the module does not compile correctly, cmake outputs a warning not stopping the compilation but resulting in a non working OOT module
+
+===== cmake output fragment =========
+-- Checking for module SWIG
+-- Disabling SWIG because version check failed.
+===== fragment end ==================================
+
+When running the module the terminal runs into the following error:
+AttributeError: 'module' object has no attribute 'vizsink_b'
+
+The solution found on this bug report is to install the latest version of SWIG:
+sudo apt install swig swig3.0
