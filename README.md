@@ -47,7 +47,7 @@ end_pattern:
 A string of 0s and 1s used to detect the end of a bit sequence. The display will wrap to a new line after any occurrence of the end sequence.
 
 drop_pattern:
-A string of 0s and 1s used to be dropped. Dropping the string will have precedence over start and end detection. \param skip_zero_bytes If set to true will cause that any byte compsed of zero's will be ignored. Ignorance of zero bytes will have precedence over start, end and drop detections.
+A string of 0s and 1s used to be dropped. Dropping the string will have precedence over start and end detection. 
 
 skip_zero_bytes:
 If set to true will cause that any byte compsed of zero's will be ignored. Ignorance of zero bytes will have precedence over start, end and drop detections.
